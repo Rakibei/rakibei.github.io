@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>SU/SAD Lecture 1: Lecture - 3. Semester Notes</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">3. Semester Notes</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">SU/SAD Lecture 1: Lecture</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1693995903527"
+                  >2023-09-06 12:25</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1694070166745"
+                  >2023-09-07 09:02</time
+                ></span
+              >
+            </div>
+            
+            <div>
+              Keywords: 
+              <span class="keyword">factor</span>
+              
+              <span class="keyword">system choice</span>
+              
+              <span class="keyword">analysis</span>
+              
+              <span class="keyword">object</span>
+              
+              <span class="keyword">design</span>
+              
+              <span class="keyword">lecture</span>
+              
+              <span class="keyword">class</span>
+              
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="introduction-and-system-choice">Introduction and System Choice</h1>
+<h2 id="course-form">Course Form</h2>
+<ul>
+<li>Individual reading, exercises and quizzes before lectures</li>
+<li>Lectures providing overview of the topic</li>
+<li>Small exercises and discussion during lectures</li>
+<li>Group exercises after lectures (next slide)</li>
+<li>Two assignments</li>
+<li>Exam:
+<ul>
+<li>Written exam</li>
+<li>4 hours</li>
+<li>January</li>
+<li>Open book</li>
+<li>Computers, tablets and mobile phones are NOT permitted</li>
+<li>External/internal censor</li>
+<li>Graded by the 7 point scale</li>
+</ul>
+</li>
+</ul>
+<h2 id="workload">Workload</h2>
+<p>ECTS ≈ 137,5 hours<br />
+<strong>Distribution of effort</strong></p>
+<ul>
+<li>Lectures: <strong>24 h</strong></li>
+<li>Preparation (reading and individual exercises): <strong>48 h</strong></li>
+<li>Group exercises: <strong>24 h</strong></li>
+<li>Submitted assignment: <strong>12 h</strong></li>
+<li>Preparation for exam and exam: <strong>29,5 h</strong></li>
+</ul>
+<hr />
+<h2 id="system-development-activites-and-method">System Development: Activites and Method</h2>
+<h3 id="analysis">Analysis:</h3>
+<ul>
+<li>Understand a system, it's context and the conditions for its implementation</li>
+<li>To determine system requirements</li>
+</ul>
+<h3 id="design">Design</h3>
+<ul>
+<li>Produce a system design without significant uncertainties</li>
+</ul>
+<h3 id="implementation">Implementation</h3>
+<ul>
+<li>Realize a design on a technical platform</li>
+</ul>
+<h3 id="method">Method</h3>
+<ul>
+<li>Guidelines for carrying out system development activites</li>
+</ul>
+<h3 id="example">Example</h3>
+<ul>
+<li>Guidelines for work processes<br />
+(OOA&amp;D)</li>
+<li>Guidelines for documentation<br />
+(UML)</li>
+</ul>
+<h3 id="a-method-can-be-applied-under-different-approaches">A method can be applied under different approaches</h3>
+<ul>
+<li>Waterfall</li>
+<li>Iterative</li>
+</ul>
+<hr style="border:1px dashed black;opacity:20%" class="jop-noMdConv" />
+<h2 id="what-is-object-orientation">What is Object-Orientation?</h2>
+<h3 id="object">Object:</h3>
+<ul>
+<li>An entity with:<br />
+Identity, State, and Behavior</li>
+<li>An object belongs to a class</li>
+</ul>
+<h3 id="class">Class:</h3>
+<ul>
+<li>A description of a collection of objects sharing:<br />
+Structure, Behavioral pattern, and Attributes</li>
+<li>Each class contains a set of objects
+<ul>
+<li>We refer to them as the objects of the class</li>
+</ul>
+</li>
+</ul>
+<h2 id="example-object-and-class">Example: Object and Class</h2>
+<h3 id="chair">Chair:</h3>
+<ul>
+<li>Object:
+<ul>
+<li>identity: myChair</li>
+<li>state: by dining table, free</li>
+<li>behaviour: bought, moved to, … , sat down on, got up from, …, moved to, …, sold</li>
+</ul>
+</li>
+<li>Class:
+<ul>
+<li>structure: has an owner</li>
+<li>attributes: position, vacant</li>
+<li>behavioural pattern: buy + {move | sit down on + get up from}* + sell</li>
+</ul>
+</li>
+</ul>
+<h3 id="warehouse">Warehouse:</h3>
+<ul>
+<li>A large collection (Class) of articles (Objects) stored in separate positions</li>
+<li>An article can be entered into, moved within and removed from the warehouse</li>
+</ul>
+<h3 id="gravel-pit">Gravel Pit:</h3>
+<ul>
+<li>In the gravel pit, dirt is sorted into sand, gravel and rocks</li>
+<li>The sorted materials are stored in piles</li>
+</ul>
+<hr style="border:1px dashed black;opacity:20%" class="jop-noMdConv" />
+<h2 id="objects-in-analysis-and-design">Objects in Analysis and Design</h2>
+<h3 id="analysis-2">Analysis</h3>
+<ul>
+<li>Phenomena outside the computer system</li>
+<li>Identity: identifies an object</li>
+<li>State: properties of an object and its relation to other objects</li>
+<li>Behavior: the events an object has performed or suffered</li>
+</ul>
+<h3 id="design-and-implementation">Design (and implementation)</h3>
+<ul>
+<li>Phenomena inside the computer system</li>
+<li>Identity: gets access to an object</li>
+<li>State: attribute values and values of relations</li>
+<li>Behavior: the operations an object can perform on request and offers to other objects</li>
+</ul>
+<hr style="border:1px dashed black;opacity:20%" class="jop-noMdConv" />
+<h2 id="model-the-context">Model the Context</h2>
+<p>Focus on an IT system and its context</p>
+<h3 id="problem-domain">Problem domain:</h3>
+<p>That part of a context that is administrated, monitored, or controlled by a system</p>
+<h3 id="application-domain">Application domain:</h3>
+<p>The organization that administrates, monitors, or controls a problem domain</p>
+<p><img src="/_resources/6a167e9442ea45f984ffecb26fb5f185.png" /></p>
+<h2 id="a-model-of-the-problem-domain">A Model of the Problem Domain</h2>
+<h3 id="model">Model:</h3>
+<p>An updated representation of the state in the problem domain</p>
+<h3 id="user">User:</h3>
+<p>Is in the application domain and gets information about the problem domain mediated through the model.<br />
+<img src="/_resources/c340828938814130acfee95aff7228bc.png" /></p>
+<h2 id="context-and-interplay">Context and Interplay</h2>
+<p>For a system controlling the temperature in a greenhouse, describe its problem domain, application domain and the interplay based on the model</p>
+<p><img src="/_resources/4abe6e87936f449fac4248b673971075.png" /></p>
+<h2 id="the-method-as-a-whole">The Method as a Whole</h2>
+<p><img src="/_resources/e2be4ed2070f46a19123a567512a4da8.png" /></p>
+<h2 id="the-ooad-method">The OOA&amp;D Method</h2>
+<p><strong>Purpose</strong></p>
+<ul>
+<li>To determine system requirements.</li>
+<li>To produce a system design without significant uncertainties.</li>
+<li>To understand a system, its context, and the conditions for its implementation.</li>
+</ul>
+<p><strong>Concepts</strong></p>
+<ul>
+<li>Object: En entity with identity, state, and behavior.</li>
+<li>Class: A description of a collection of objects sharing structure, behavioral pattern, and attributes.</li>
+<li>Problem domain: That part of a context that is administrated, monitored, or controlled by a system.</li>
+<li>Application domain: The organization that administrates, monitors, or controls a problem domain.</li>
+<li>System: A collection of components that implements modeling requirement functions, and interfaces</li>
+</ul>
+<p><strong>Principles</strong></p>
+<ul>
+<li>Model the context.</li>
+<li>Emphasize the architecture.</li>
+<li>Reuse patterns.</li>
+<li>Tailor the method to suit specific projects.</li>
+</ul>
+<p><strong>Results</strong></p>
+<ul>
+<li>An analysis document and a design document.</li>
+</ul>
+<hr />
+<h2 id="system-choice">System Choice</h2>
+<p>The purpose of the System Choice activity is to define the system in its context = AD+PD</p>
+<p><img src="/_resources/6a167e9442ea45f984ffecb26fb5f185.png" /></p>
+<h2 id="system-choice-purpose-and-activities">System Choice: Purpose and Activities</h2>
+<p><img src="/_resources/2030f3424a8d4058b9f6b76b7ac24239.png" /></p>
+<h3 id="system-definition">System definition:</h3>
+<p>A concise description of a computerized system expressed in natural language</p>
+<h3 id="situation">Situation</h3>
+<p>Describe the situation:</p>
+<ul>
+<li>The context of the system (AD and PD)</li>
+</ul>
+<p>Maybe also:</p>
+<ul>
+<li>The system</li>
+<li>The conditions for development of the system</li>
+</ul>
+<p>We describe this on an overall level in a rich picture</p>
+<p>Rich Picture:<br />
+<img src="/_resources/5936c379926d47868a3e9fd79321b091.png" /></p>
+<p>The situation is described by a rich picture</p>
+<ul>
+<li>Focus:
+<ul>
+<li>on actors and the role of the system</li>
+</ul>
+</li>
+<li>Entities:
+<ul>
+<li>People, roles and tasks, locations</li>
+</ul>
+</li>
+<li>Processes such as:
+<ul>
+<li>work, production, information processing, exchange, planning, control, development, organizational change</li>
+</ul>
+</li>
+<li>Structures such as:
+<ul>
+<li>production, use, application, communication, deal, ownership, membership, relationship, power</li>
+</ul>
+</li>
+</ul>
+<h2 id="ideas">Ideas</h2>
+<ul>
+<li>Complement the description of the existing situation with new ideas</li>
+<li>The software developers are often best able to suggest changes</li>
+</ul>
+<h3 id="create-ideas">Create Ideas</h3>
+<p>Exemplars (e.g. for a financial system):</p>
+<ul>
+<li>Study an existing system</li>
+<li>Look at spreadsheets</li>
+<li>Examine standard packages</li>
+<li>Consider SAP</li>
+</ul>
+<p>Metaphors (e.g. for a library):</p>
+<ul>
+<li>Storage</li>
+<li>Supermarket</li>
+<li>School</li>
+</ul>
+<p>Experiments with prototypes:</p>
+<ul>
+<li>Planning</li>
+<li>Development</li>
+<li>Preparation</li>
+<li>Test</li>
+<li>Summarizing</li>
+</ul>
+<p>More about prototypes in the DEB course</p>
+<h2 id="systems">Systems</h2>
+<p>Based on</p>
+<ul>
+<li>The description of the situation</li>
+<li>The new ideas</li>
+</ul>
+<p>Describe the system to be developed on an overall level</p>
+<hr style="border:1px dashed black;opacity:20%" class="jop-noMdConv" />
+<h2 id="system-definition-factor">System Definition (FACTOR)</h2>
+<p><strong>Functionality:</strong> The system functions that support the application-domain tasks.<br />
+<strong>Application domain:</strong> Those parts of an organization that administrate, monitor, or control a problem domain; the users and their work tasks.<br />
+<strong>Conditions:</strong> The conditions under which the system will be developed and used.<br />
+<strong>Technology:</strong> Both the technology used to develop the system and the technology on which the system will run.<br />
+<strong>Objects:</strong> The main objects in the problem domain.<br />
+<strong>Responsibility:</strong> The system’s overall responsibility in relation to its context.</p>
+<h3 id="example-2">Example:</h3>
+<p><strong>F</strong><br />
+The system can register a new customer with credit card information, compose a meal with a number of orders for food shops and bars, select food or drink items in each order of a meal, make payment of a meal, and register the table where a customer wants his/her orders delivered.</p>
+<p><strong>A</strong><br />
+A system provided as an app, which is used by customers who want to order food and drinks at S-Food’s street food market. The customers come to S-Food at their own initiative, and their only relation to S-Food is that they download and use their app to order and pay for food and drinks.</p>
+<p><strong>C</strong> The app will be developed by S-Food’s own IT department in cooperation with S-Food’s sales department, the food shops and bars, and customers that will be selected to represent the whole customer segment. It may be necessary to resolve conflicting requirements between these different groups. The app will be used by users with very different levels of IT skills.</p>
+<p><strong>T</strong> The app is running on each customer’s smartphone. It communicates through a wireless network with a server that registers what the individual customer has ordered and paid. On the smartphone, there is always a copy of all meals from the current day, so they are available if the wireless network should fail. The app includes a QR code reader.</p>
+<p><strong>O</strong> Customer, Food Shop, Bar, Order, Meal, Food item, Drink item.</p>
+<p><strong>R</strong> The system is primarily an administrative tool that is responsible for registering all customers and their orders, and facilitating secure payment of these with the customers’ credit cards. Secondarily, it is a communication medium that customers use to request delivery of orders from the food shops and bars.</p>
+<h2 id="understanding-responsibilities">Understanding Responsibilities</h2>
+<p>Kindberg and Fox (2002)</p>
+<p>The divide between the responsibilities of the system and the user is a “semantic rubicon”: “[that] demarcates responsibility for decision-making between the system and the user.”</p>
+<p>For the user to understand the semantic rubicon it requires:</p>
+<ul>
+<li>defining the knowledge the system can have of the physical world and of user(s) behavior – through sensing and user interaction</li>
+<li>defining the knowledge the user has of the system and how they might influence it</li>
+<li>defining the mechanisms and permissible interactions for one to influence the other and to transfer responsibilities between them</li>
+</ul>
+<p><img src="/_resources/7d15b443cd4f41b4889ccb7c21a59004.png" /></p>
+<h2 id="exploring-responsibilities">Exploring Responsibilities</h2>
+<p><strong>Possible responsibilities:</strong></p>
+<ul>
+<li>Automatic system</li>
+<li>Support tool</li>
+<li>Proposer</li>
+</ul>
+<p><strong>Example systems:</strong></p>
+<ul>
+<li>Making a schedule for a school</li>
+<li>Airplane landing system</li>
+<li>Greenhouse temperature control</li>
+</ul>
+<h2 id="system-choice-summary">System Choice: Summary</h2>
+<p><strong>Purpose</strong></p>
+<ul>
+<li>To agree on the overall system characteristics.</li>
+</ul>
+<p><strong>Concept</strong></p>
+<ul>
+<li>System definition: A concise description of a computerized system expressed in natural language.</li>
+</ul>
+<p><strong>Principles</strong></p>
+<ul>
+<li>Appreciate the situation.</li>
+<li>Cultivate new ideas.</li>
+<li>Define alternative systems.</li>
+</ul>
+<p><strong>Results</strong></p>
+<ul>
+<li>A system definition that fulfills the FACTOR criterion.</li>
+</ul>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
